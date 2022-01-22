@@ -1,0 +1,36 @@
+body
+{
+    background-color: lightyellow
+}
+.form
+{
+    background-color: blanchedalmond;
+    text-align: center;
+    margin: auto;
+    width: 25%;
+    box-shadow: rgba(50, 50, 93, 0.25) 
+    0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 
+     0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 
+      0px -2px 6px 0px inset;
+      border-radius: 25px;
+}
+
+  
+  .stripe {
+    cursor: pointer;
+    border-radius: 40px;
+    border: 2px solid #181616;
+    color: #ffffff;
+    background-image: repeating-linear-gradient(90deg, 
+      rgba(20, 25, 25, 0.6),
+      rgba(25, 25, 25, 0.6) 10%, 
+      #4c4c4c 10%, #4c4c4c 20%);
+    background-size: 100%;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .stripe:hover {
+    background-position: 150px;
+  }

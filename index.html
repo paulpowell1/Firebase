@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Form</title>
+    <!-- Reference Firebase app library and authentication library -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-auth.js"></script>
+    <script src="form.js"></script>
+    <script>
+        function showAlert() {
+    alert ("Proof of concept");
+  }
+    </script>
+    <!-- link to css file -->
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- main body with header and divs to organize content -->
+    <div class="form">
+    <h1> Form</h1>
+    <div id="formContainer">
+        <div id="header"></div>
+        <div>
+    <!-- Input for email -->
+    <input type="email" placeholder="email" id="email"/>
+        </div>
+        <div>
+    <!-- Input for password -->
+    <input type="password" placeholder="password" id="password"/>
+        </div>
+        <hr>
+    <!-- user options -->
+    <button onclick="signUp()" id="signUp" class="stripe"> Sign Up</button>
+    <button onclick="signIn()" id="signIn" class="stripe"> Sign In</button>
+    <button onclick="signOut()" id="signOut" class="stripe"> Sign Out</button>
+    <button onclick="showAlert()" id="showAlert" class="stripe"> Test</button>
+    </div>
+</div>
+    
+</body>
+</html>
